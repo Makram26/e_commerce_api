@@ -14,13 +14,13 @@ const dotenv=require("dotenv")
 
 dotenv.config({path:"config/config.env"})
 
-// console.log(">>>>>>>",process.env.JWT_SECRET)
+console.log(">>>>>>>",process.env.PORT)
 
 // console.log(youtube)  // this type of caught error e.g not defind some values
 const PORT = 4000
 
-
-const server = app.listen(PORT, () => {
+// .listen(process.env.PORT || 5000)
+const server = app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is working on http://localhost:${PORT}`)
 })
 
