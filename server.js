@@ -14,7 +14,7 @@ const dotenv=require("dotenv")
 
 dotenv.config({path:"config/config.env"})
 
-console.log(">>>>>>>",process.env.PORT)
+console.log(">>>>>>>",process.env.PORTS)
 
 // console.log(youtube)  // this type of caught error e.g not defind some values
 const PORT = 4000
